@@ -9,6 +9,12 @@ import config as cf
 import dsv as dsv
 
 
-mapa=mp.newMap(numelements=17,maptype='CHAINING',loadfactor=0.5, cmpfunction=None)
-mapsfile=cf.data_dir + "2023.dsv"
-input_file= dsv.read(open(mapsfile, encoding='utf-8'))
+def load_data():
+    mapa=mp.newMap(numelements=17,maptype='CHAINING',loadfactor=0.5, cmpfunction=None)
+    mapsfile=cf.data_dir + "2023.dsv"
+    input_file= dsv.read(open(mapsfile, encoding='utf-8'))
+
+    
+
+
+load_data()
